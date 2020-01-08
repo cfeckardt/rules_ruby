@@ -20,8 +20,13 @@ load(
     _rb_rspec = "rb_rspec",
     _rb_rspec_test = "rb_rspec_test",
 )
+load(
+    "@coinbase_rules_ruby//ruby/private:gem.bzl",
+    _gem = "rb_gem",
+  )
 
 ruby_toolchain = _toolchain
+
 rb_library = _library
 rb_binary = _binary
 rb_test = _test
@@ -29,3 +34,5 @@ rb_rspec_test = _rb_rspec_test
 rb_rspec = _rb_rspec
 bundle_install = _rb_bundle
 rb_bundle = _rb_bundle
+
+rb_gem = _gem
