@@ -7,5 +7,8 @@ load(
 
 rb_gem(
     name = "default_gem",
-    authors = ["Coinbase"]
+    authors = ["Coinbase"],
+    deps = [
+        "//lib:example_gem",
+    ],
 )

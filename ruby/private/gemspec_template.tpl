@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name          = {name}
   s.summary       = {name}
-  s.authors       = {authors} ["Coinbase"]
+  s.authors       = {authors}
   s.version       = {version}
   s.files         = {srcs}
   s.require_paths = ["foo"]
