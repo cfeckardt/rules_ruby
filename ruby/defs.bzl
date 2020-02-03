@@ -21,6 +21,10 @@ load(
     _rb_rspec_test = "rb_rspec_test",
 )
 load(
+    "@coinbase_rules_ruby//ruby/private:gemspec.bzl",
+    _gemspec = "rb_gemspec",
+  )
+load(
     "@coinbase_rules_ruby//ruby/private:gem.bzl",
     _gem = "rb_gem",
   )
@@ -35,4 +39,5 @@ rb_rspec = _rb_rspec
 bundle_install = _rb_bundle
 rb_bundle = _rb_bundle
 
+rb_gemspec = _gemspec
 rb_gem = _gem

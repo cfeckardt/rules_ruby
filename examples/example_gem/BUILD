@@ -11,4 +11,5 @@ rb_gem(
     deps = [
         "//lib:example_gem",
     ],
+    version = "0.1.0",
 )

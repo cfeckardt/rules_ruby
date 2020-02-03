@@ -6,7 +6,6 @@ load(
 )
 
 rb_library(
-    name = "example_gem",
-    srcs = ["example_gem.rb"],
-    deps = ["//lib/foo:default_library"],
+    name = "default_library",
+    srcs = ["bar.rb"],
 )
